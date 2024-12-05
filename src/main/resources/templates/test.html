@@ -1,0 +1,13 @@
+<div xmlns:th="http://www.w3.org/1999/xhtml">
+    <h1>Users</h1>
+
+    <h2>ADDED used</h2>
+    <h3 th:text ="${user_add.username}"></h3>
+
+
+    <ol th:each = "myUserItem:${myUsers}">
+        <li th:text ="${myUserItem.username}"></li>
+            <li th:text ="${myUserItem.password}"></li>
+    </ol>
+
+</div>
